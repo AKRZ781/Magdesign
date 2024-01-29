@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <!-----OFFCANVAS-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            ...
+        </div>
+    </div>
+
+    <!------HEADER------->
+    <header>
+        <div class="container-fluid px-0">
+            <div class="border border-end">
+                <div
+                    class="container py-3 text-center d-md-flex col-md-12 justify-content-md-between align-items-md-center position-relative">
+                    <h1 class="h1 col-12 col-md-3 order-0 order-md-1">MAGDESIGN</h1>
+                    <div
+                        class="col-12 col-md-6 d-flex justify-content-between justify-content-md-end align-items-md-center py-2 order-1 order-md-2">
+                        <div class="col-4 col-md-4 pe-2 ">
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-facebook-f px-3"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <i class="fa-solid fa-bars col-1" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+                </div>
+                <form class=" col-12 col-md-3 order-3 order-md-0" id="form1">
+                            <input class="col-12 " type="search">
+                            </form>
+
+                    </div>
+                </div>
+            </div> <!--container-fluid-->
+
+    </header>
+
+    <!------------CAROUSEL-------->
+    <div class="container">
+        <h2 class="h2 text-center py-5"> Trending</h2>
+
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/img1.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/img2.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/ilmg3.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div><!---Carousel----->
+
+
+        <!-----------------CARDS----------------------->
+        <main>
+            <div class="card-header pt-5 d-lg-flex flex-lg-wrap gap-2 justify-content-lg-between">
+                <div class="card col-lg-4 mb-3 mb-md-0 border-0">
+                    <img src="img/ilmg3.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="h4 fs-5 fw-bolder">Business, Travel <span class="fs-5 text-secondary">- July
+                                2020</span></h4>
+                        <p class="fw-bolder fs-3">Your most unhappy customers are you greatest source learning</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="col-2" src="img/male-user.webp" alt="">
+                            <div class="ps-2">
+                                <h4 class="fw-bolder h4  mb-0">Serge Campbell</h4>
+                                <span class="fs-5 text-secondary">CEO and Founder</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card col-lg-4 border-0">
+                    <img src="img/img1.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="h4 fs-5 fw-bolder">Business, Travel <span class="fs-5 text-secondary">- July
+                                2020</span></h4>
+                        <p class="fw-bolder fs-3">Your most unhappy customers are you greatest source learning</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="col-2" src="img/male-user.webp" alt="">
+                            <div class="ps-2">
+                                <h4 class="fw-bolder h4  mb-0">Serge Campbell</h4>
+                                <span class="fs-5 text-secondary">CEO and Founder</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card col-lg-4 border-0">
+                    <img src="img/img2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="h4 fs-5 fw-bolder">Business, Travel <span class="fs-5 text-secondary">- July
+                                2020</span></h4>
+                        <p class="fw-bolder fs-3">Your most unhappy customers are you greatest source learning</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="col-2" src="img/male-user.webp" alt="">
+                            <div class="ps-2">
+                                <h4 class="fw-bolder h4  mb-0">Serge Campbell</h4>
+                                <span class="fs-5 text-secondary">CEO and Founder</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card col-lg-4 border-0">
+                    <img src="img/img1.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="h4 fs-5 fw-bolder">Business, Travel <span class="fs-5 text-secondary">- July
+                                2020</span></h4>
+                        <p class="fw-bolder fs-3">Your most unhappy customers are you greatest source learning</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="col-2" src="img/male-user.webp" alt="">
+                            <div class="ps-2">
+                                <h4 class="fw-bolder h4  mb-0">Serge Campbell</h4>
+                                <span class="fs-5 text-secondary">CEO and Founder</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card col-lg-4 border-0">
+                    <img src="img/img2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="h4 fs-5 fw-bolder">Business, Travel <span class="fs-5 text-secondary">- July
+                                2020</span></h4>
+                        <p class="fw-bolder fs-3">Your most unhappy customers are you greatest source learning</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="col-2" src="img/male-user.webp" alt="">
+                            <div class="ps-2">
+                                <h4 class="fw-bolder h4  mb-0">Serge Campbell</h4>
+                                <span class="fs-5 text-secondary">CEO and Founder</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card col-lg-4 border-0">
+                    <img src="img/ilmg3.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="h4 fs-5 fw-bolder">Business, Travel <span class="fs-5 text-secondary">- July
+                                2020</span></h4>
+                        <p class="fw-bolder fs-3">Your most unhappy customers are you greatest source learning</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="col-2" src="img/male-user.webp" alt="">
+                            <div class="ps-2">
+                                <h4 class="fw-bolder h4  mb-0">Serge Campbell</h4>
+                                <span class="fs-5 text-secondary">CEO and Founder</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+    </div> <!----Container------>
+
+
+    <!--------------CAROUSEL----------------->
+    <div class="container-fluid">
+
+        <h2 class="h2 text-center py-5"> Most popular posts</h2>
+
+        <div id="carouselExampleCaptions2" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/img1.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/img2.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/ilmg3.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+
+    <!------------SPORTS------------------------>
+
+    <div class="container mt-5 d-lg-flex">
+
+        <div class="mt-5">
+            <h3 class="h3">Sports</h3>
+
+            <section class="col-lg-12 gap-2">
+                <div class="card mb-3 flex-md-row border-0">
+                    <img src="img/ilmg3.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body pt-0">
+                        <h4 class="h4 fs-5 fw-bolder">Business, Travel <span class="fs-5 text-secondary">- July
+                                2020</span></h4>
+                        <p class="fw-bolder fs-3">Your most unhappy customers are you greatest source learning</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="col-2" src="img/male-user.webp" alt="">
+                            <div class="ps-2">
+                                <h4 class="fw-bolder h4  mb-0">Serge Campbell</h4>
+                                <span class="fs-5 text-secondary">CEO and Founder</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card flex-md-row border-0">
+
+                    <img src="img/img1.jpeg" class="card-img-top" alt="...">
+
+                    <div class="card-body pt-0">
+                        <h4 class="h4 fs-5 fw-bolder">Business, Travel <span class="fs-5 text-secondary">- July
+                                2020</span></h4>
+                        <p class="fw-bolder fs-3">Your most unhappy customers are you greatest source learning</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="col-2" src="img/male-user.webp" alt="">
+                            <div class="ps-2">
+                                <h4 class="fw-bolder h4 mb-0">Serge Campbell</h4>
+                                <span class="fs-5 text-secondary">CEO and Founder</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card flex-md-row border-0">
+
+                    <img src="img/img2.jpeg" class="card-img-top" alt="...">
+
+                    <div class="card-body pt-0">
+                        <h4 class="h4 fs-5 fw-bolder">Business, Travel <span class="fs-5 text-secondary">- July
+                                2020</span></h4>
+                        <p class="fw-bolder fs-3">Your most unhappy customers are you greatest source learning</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="col-2" src="img/male-user.webp" alt="">
+                            <div class="ps-2">
+                                <h4 class="fw-bolder h4 mb-0">Serge Campbell</h4>
+                                <span class="fs-5 text-secondary">CEO and Founder</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card flex-md-row border-0">
+
+                    <img src="img/img1.jpeg" class="card-img-top" alt="...">
+
+                    <div class="card-body pt-0">
+                        <h4 class="h4 fs-5 fw-bolder">Business, Travel <span class="fs-5 text-secondary">- July
+                                2020</span></h4>
+                        <p class="fw-bolder fs-3">Your most unhappy customers are you greatest source learning</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="col-2" src="img/male-user.webp" alt="">
+                            <div class="ps-2">
+                                <h4 class="fw-bolder h4  mb-0">Serge Campbell</h4>
+                                <span class="fs-5 text-secondary">CEO and Founder</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card flex-md-row border-0">
+
+                    <img src="img/img2.jpeg" class="card-img-top" alt="...">
+
+                    <div class="card-body pt-0">
+                        <h4 class="h4 fs-5 fw-bolder">Business, Travel <span class="fs-5 text-secondary">- July
+                                2020</span></h4>
+                        <p class="fw-bolder fs-3">Your most unhappy customers are you greatest source learning</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="col-2" src="img/male-user.webp" alt="">
+                            <div class="ps-2">
+                                <h4 class="fw-bolder h4  mb-0">Serge Campbell</h4>
+                                <span class="fs-5 text-secondary">CEO and Founder</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card flex-md-row border-0">
+
+                    <img src="img/ilmg3.jpeg" class="card-img-top" alt="...">
+
+                    <div class="card-body pt-0">
+                        <h4 class="h4 fs-5 fw-bolder">Business, Travel <span class="fs-5 text-secondary">- July
+                                2020</span></h4>
+                        <p class="fw-bolder fs-3">Your most unhappy customers are you greatest source learning</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="col-2" src="img/male-user.webp" alt="">
+                            <div class="ps-2">
+                                <h4 class="fw-bolder h4  mb-0">Serge Campbell</h4>
+                                <span class="fs-5 text-secondary">CEO and Founder</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+        <!---BUSINESS----->
+
+        <div class="mt-5">
+            <h3 class="h3">Business</h3>
+
+            <section class="col-lg-12 gap-2">
+                <div class="card mb-3 flex-md-row border-0">
+
+                    <img src="img/ilmg3.jpeg" class="card-img-top" alt="...">
+
+                    <div class="card-body pt-0">
+                        <h4 class="h4 fs-5 fw-bolder">Business, Travel <span class="fs-5 text-secondary">- July
+                                2020</span></h4>
+                        <p class="fw-bolder fs-3">Your most unhappy customers are you greatest source learning</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="col-2" src="img/male-user.webp" alt="">
+                            <div class="ps-2">
+                                <h4 class="fw-bolder h4  mb-0">Serge Campbell</h4>
+                                <span class="fs-5 text-secondary">CEO and Founder</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card flex-md-row border-0">
+
+                    <img src="img/img1.jpeg" class="card-img-top" alt="...">
+
+                    <div class="card-body pt-0">
+                        <h4 class="h4 fs-5 fw-bolder">Business, Travel <span class="fs-5 text-secondary">- July
+                                2020</span></h4>
+                        <p class="fw-bolder fs-3">Your most unhappy customers are you greatest source learning</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="col-2" src="img/male-user.webp" alt="">
+                            <div class="ps-2">
+                                <h4 class="fw-bolder h4  mb-0">Serge Campbell</h4>
+                                <span class="fs-5 text-secondary">CEO and Founder</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card flex-md-row border-0">
+
+                    <img src="img/img2.jpeg" class="card-img-top" alt="...">
+
+                    <div class="card-body pt-0">
+                        <h4 class="h4 fs-5 fw-bolder">Business, Travel <span class="fs-5 text-secondary">- July
+                                2020</span></h4>
+                        <p class="fw-bolder fs-3">Your most unhappy customers are you greatest source learning</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="col-2" src="img/male-user.webp" alt="">
+                            <div class="ps-2">
+                                <h4 class="fw-bolder h4  mb-0">Serge Campbell</h4>
+                                <span class="fs-5 text-secondary">CEO and Founder</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card flex-md-row border-0">
+
+                    <img src="img/img1.jpeg" class="card-img-top" alt="...">
+
+                    <div class="card-body pt-0">
+                        <h4 class="h4 fs-5 fw-bolder">Business, Travel <span class="fs-5 text-secondary">- July
+                                2020</span></h4>
+                        <p class="fw-bolder fs-3">Your most unhappy customers are you greatest source learning</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="col-2" src="img/male-user.webp" alt="">
+                            <div class="ps-2">
+                                <h4 class="fw-bolder h4  mb-0">Serge Campbell</h4>
+                                <span class="fs-5 text-secondary">CEO and Founder</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card flex-md-row border-0">
+
+                    <img src="img/img2.jpeg" class="card-img-top" alt="...">
+
+                    <div class="card-body pt-0">
+                        <h4 class="h4 fs-5 fw-bolder">Business, Travel <span class="fs-5 text-secondary">- July
+                                2020</span></h4>
+                        <p class="fw-bolder fs-3">Your most unhappy customers are you greatest source learning</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="col-2" src="img/male-user.webp" alt="">
+                            <div class="ps-2">
+                                <h4 class="fw-bolder h4  mb-0">Serge Campbell</h4>
+                                <span class="fs-5 text-secondary">CEO and Founder</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card flex-md-row border-0">
+
+                    <img src="img/ilmg3.jpeg" class="card-img-top" alt="...">
+
+                    <div class="card-body pt-0">
+                        <h4 class="h4 fs-5 fw-bolder">Business, Travel <span class="fs-5 text-secondary">- July
+                                2020</span></h4>
+                        <p class="fw-bolder fs-3">Your most unhappy customers are you greatest source learning</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="col-2" src="img/male-user.webp" alt="">
+                            <div class="ps-2">
+                                <h4 class="fw-bolder h4  mb-0">Serge Campbell</h4>
+                                <span class="fs-5 text-secondary">CEO and Founder</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div><!---CONRAINER---->
+    </main>
+    <!--------------FOOTER----------->
+    <footer>
+        <div class="container-fluid px-0 bg-light">
+
+            <div class="container mt-5 py-5">
+                <form id="newsletter">
+                    <h2 class="h2">Subscribe to newsletter</h2>
+                    <p class="d-md-flex justify-content-md-between align-items-md-center">
+                        <input class="col-12 col-md-7 col-lg-8" type="text">
+                        <input class="col-12 col-md-4 col-lg-3 text-white fw-bolder mt-3 border-0 mt-md-0" type="submit"
+                            value="SUBSCRIBE">
+                    </p>
+                </form>
+            </div>
+
+        </div>
+
+        <div>
+            <div class="mt-5 d-flex justify-content-center">
+                <i class="fa-brands fa-facebook col-1 fa-2xl"></i>
+                <i class="fa-brands fa-square-twitter col-1 fa-2xl"></i>
+                <i class="fa-brands fa-linkedin-in col-1 fa-2xl"></i>
+                <i class="fa-brands fa-square-youtube col-1 fa-2xl"></i>
+            </div>
+
+            <div class="mt-4 d-flex align-items-center flex-column">
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, commodi.
+                </p>
+                <p>Adipisicing Elit. Quod, Commodi. </p>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+</body>
+
+</html>

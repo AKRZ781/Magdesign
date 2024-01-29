@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#form1 input {
+    border-radius: 20px;
+    height: 40px;
+}
+
+.card-body span {
+    font-weight: normal !important;
+}
+
+#newsletter input:first-child {
+    height: 50px;
+}
+
+#newsletter input:last-child {
+    height: 40px;
+    background-color: ORANGE;
+    border-radius: 20px;
+}
+
+@media screen and (min-width:768px) {
+
+    h1 {
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    header {
+        height: 80px;
+    }
+    section .card>img {
+        min-width: 200px!important;
+        height: fit-content!important;
+    }  
+   
+
+}
+
+@media screen and (min-width:992px) {
+   
+    .card-header>.card{
+        max-width:300px!important ;
+    }
+    p.fs-3{
+        font-size: 18px!important;
+    }
+}
+
+@media screen and (min-width:1200px) {
+   
+    .card-header>.card{
+        max-width:360px!important ;
+    }
+}
+
+@media screen and (min-width:1400px) {
+   
+    .card-header>.card{
+        max-width:400px!important ;
+    }
+}
